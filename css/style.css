@@ -11,7 +11,7 @@
     height: 125px;
     display: flex;
     justify-content: flex wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #457b9d;
     font-size: 50px;
     align-items: center;
@@ -23,6 +23,11 @@ h1, h2{font-size: 35px;
     font-weight: 500;
 }
 
+h2 {
+    color: #457b9d;
+    font-size: 60px;
+}
+
 .headerP{font-size: 30px;}
 
 
@@ -30,23 +35,29 @@ h1, h2{font-size: 35px;
 .homeMain{
     display: flex;
     justify-content: center;
-    background-color: #e4e5ed;
+    background-color: #E3ECF3;
+    padding: 10px;
 }
 
-.tubapic1{
+#homePic{
     width: 75%;   
+    border: 5px solid #457b9d;
 }/*END HOME PAGE CSS */
 
 /* BIO */
 .bioMain{
- 
-    background-color: #e4e5ed 
+    
+    background-color: #e3ecf3; 
+    padding: 20px;
 }
 
-.tubapic2 {width: 100%}
-.basspic1 {width: 100%}
+.bioPics {
+    width: 90%;
+    border: 5px solid #457b9d;
+}
 
 
+/* END BIO PAGE CSS /*
 
 
 /* Footer */
