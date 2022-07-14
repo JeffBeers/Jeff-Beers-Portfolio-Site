@@ -28,13 +28,16 @@ h2 {
 
 .headerP{font-size: 30px;}
 
+main {
+    padding: 20px;
+}
+
 
 /* HOME PAGE CSS */
 .homeMain{
     display: flex;
     justify-content: center;
     background-color: #E3ECF3;
-    padding: 10px;
 }
 
 #homePic{
@@ -46,9 +49,7 @@ h2 {
 
 /* BIO */
 .bioMain{
-    
     background-color: #e3ecf3; 
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
 }
