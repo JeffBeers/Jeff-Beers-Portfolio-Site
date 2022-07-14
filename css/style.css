@@ -10,7 +10,6 @@
     width: 100%;
     height: 125px;
     display: flex;
-    justify-content: flex wrap;
     justify-content: space-evenly;
     background-color: #457b9d;
     font-size: 50px;
@@ -39,9 +38,11 @@ h2 {
 }
 
 #homePic{
-    width: 75%;   
+    width: 65%;   
     border: 5px solid #457b9d;
-}/*END HOME PAGE CSS */
+}
+/*END HOME PAGE CSS */
+
 
 /* BIO */
 .bioMain{
@@ -50,16 +51,12 @@ h2 {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
 }
 
 .bioPics {
-    width: 70%;
+    width: 65%;
     border: 5px solid #457b9d;
 }
-
-
 /* END BIO PAGE CSS /*
 
 
@@ -72,11 +69,8 @@ h2 {
     background-color: #457b9d;
     align-items: center;
     font-weight: 500;
-    position: fixed;
-    bottom: 0;
-
 }
-
+/* END FOOTER CSS */
 
 
 
