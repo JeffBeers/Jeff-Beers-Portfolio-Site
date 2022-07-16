@@ -14,10 +14,19 @@
 <body>
 
    <header class="header">
-
+        <!-- HAMBURGER TEST -->
         <h1>Jeff Beers | Musician <br> Tuba, Bass</h1>
+            <div id="menuBar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+
+            <!--
             <nav class="nav">
-            <!--collapse for mobile, but horizontal for large screen.-->
+            
                 <ul id="menu">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="bio.html">Bio</a></li>
@@ -25,6 +34,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
              </nav>
+            -->
    </header> 
 
    <main class="homeMain">
@@ -36,6 +46,6 @@
    <footer class="footer">
         &copy; 2022 Copyright - Jeff Beers
    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
