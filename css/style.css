@@ -24,13 +24,14 @@
     height: 30px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
+    padding-top: 70px;
 }
-
+    
 .bar{
     height: 5px;
     width: 100%;
     background-color: black;
-    display: block;
+    display: block; 
     transition: 0.3s ease;
 }
 
@@ -42,24 +43,72 @@
     transform: translateY(4px);
 }
 
-/* ANIMATION once clicked on and toggled... */
+.nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+}
+
+.nav li{
+    list-style: none;
+    padding: 0px 0;
+}
+
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.menu-bg, #menu-bar{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.menu-bg{
+    z-index: 1; /* pushes background behind menu links */
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, white,black);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar{
+    z-index: 2; /* brings menu in front of background */
+}
+
+.change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(60%, -10%);
+}
+
 .change .bar{
     background-color: white;
 }
 
 .change #bar1{
-    transform: translateY(4px) rotateZ(-45deg); /* brings to center, then rotates into X */
+    transform: translateY(4px) rotateZ(-45deg);
 }
 
 .change #bar3{
-    transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotateZ(45deg);
 }
 
 .change #bar2{
-    opacity: 0; /* gets rid of middle bar- not needed */
+    opacity: 0;
 }
 
-
+.change{
+    display: block;
+}
 
 /* END HAMBURGER MENU */
 
@@ -72,8 +121,6 @@ h2 {
     font-size: 60px;
     text-shadow: -3px 3px 2px black;
 }
-
-.headerP{font-size: 30px;}
 
 main {
     padding: 20px;
@@ -129,7 +176,7 @@ main {
 
 /* MEDIUM / Tablet */
 @media only screen and (min-width: 768px) {
-
+/*
     #menu li {
         display: inline;
         padding: 8px;
@@ -143,9 +190,9 @@ main {
     #menu li.active {
         text-decoration: underline;
     }
+    */
 }
 
 /* LARGE / Desktop */
 @media only screen and (min-width: 1024px) {
-    
 }

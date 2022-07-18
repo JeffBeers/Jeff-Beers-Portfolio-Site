@@ -16,20 +16,33 @@
    <header class="header">
        
         <h1>Jeff Beers | Musician <br> Tuba, Bass</h1>
-            <nav class="nav">
-            <!--collapse for mobile, but horizontal for large screen.-->
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>             
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="bio.html">Bio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"> </div>
+
+            <!--<nav class="nav">
                 <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="bio.html">Bio</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-             </nav>
+             </nav>-->
    </header> 
 
    <main class="bioMain">
         <h2> Biography</h2>
-            <!--<img src="img/tubaHeadshot1.JPG" alt="Jeff with his tuba"> -->
                 
                 <p>My name is Jeff Beers, and I am a musician living in Louisville, Kentucky. I started playing tuba for my fifth grade band when I was 10 years old. When I was 14, I started playing electric bass with several high school rock bands. The combination of formal music education at school on tuba, and the informal creation of music with my friends on bass is what drove my passion for music at a young age. I went on to get a bachelor’s degree in music performance from Southern Illinois University in 2014, and then a master’s degree in music performance from the University of Louisville in 2018.</p>
                 <img class="bioPics" src="img/tuba2.jpg" alt="Jeff Beers with tuba">
@@ -37,12 +50,11 @@
                 <img class="bioPics" src="img/bass1.jpg" alt="Jeff Beers with his bass">
                 <p>I also play bass with Louisville based the Usual Suspects Band, singer-songwriter Josh Murphy, and have collaborated in multiple socially distanced recording projects since the beginning of the pandemic. I have played countless musical pit orchestras, and some of my favorites to play are Rocky Horror Picture Show Live, Rock of Ages, Ragtime, Hairspray, and Chicago where I got to alternate playing tuba and bass throughout the show. </p>
                  
-   
    </main>
 
    <footer class="footer">
         &copy; 2022 Copyright - Jeff Beers
    </footer>
-
+   <script src="script.js"></script>
 </body>
 </html>
