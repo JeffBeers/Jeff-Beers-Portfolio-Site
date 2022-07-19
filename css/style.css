@@ -10,12 +10,11 @@
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-evenly;
-    background-color: #d27245;
+    justify-content: space-between;
+    background-color: #5e548e;
     font-size: 50px;
     align-items: center;
-    padding-left: 5px;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 /* HAMBURGER MENU */
@@ -57,6 +56,10 @@
     padding: 5px 0;
 }
 
+.nav li.active{
+    text-decoration: underline;
+}
+
 .nav{
     padding: 0;
     margin: 0 10px;
@@ -71,17 +74,17 @@
 }
 
 .menu-bg{
-    z-index: 1; /* pushes background behind menu links */
+    z-index: 1; /* pushes menu background behind menu links */
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #e9c46a, #d27245);
+    background: #64a6bd;
     border-radius: 50%;
     transition: 0.3s ease;
 }
 
 #menu-bar{
-    z-index: 2; /* brings menu in front of background */
+    z-index: 2; /* brings menu in front of menu background */
 }
 
 .change-bg{
@@ -116,8 +119,12 @@ h1, h2{font-size: 35px;
     font-weight: 500;
 }
 
+h1{
+    padding-left: 30px;
+}
+
 h2 {
-    color: #d27245;
+    color: #64a6bd;
     font-size: 60px;
     text-shadow: -3px 3px 2px black;
 }
@@ -127,7 +134,7 @@ main {
 }
 
 
-/* HOME PAGE CSS */
+/* HOME PAGE */
 .homeMain{
     display: flex;
     justify-content: center;
@@ -135,27 +142,41 @@ main {
 }
 
 #homePic{
-    width: 65%;   
+    width: 65%; 
+    margin-bottom: 164px;  
     border: 2px solid black;
 }
-/*END HOME PAGE CSS */
+/*END HOME PAGE */
 
 
 /* BIO */
 .bioMain{
     background-color: #e3ecf3; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: block;
 }
 
 .bioPics {
     width: 65%;
     border: 2px solid black;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-/* END BIO PAGE CSS /*
+/* END BIO PAGE /*
 
+
+/* CONTACT PAGE */
+
+.inputGroup{
+    margin-bottom: 10px;
+}
+
+.inputGroup input,
+.inputGroup textarea,
+.inputGroup select{
+    padding: 5px;
+    border: 1px solid black;
+    width: 75%;
+}
 
 /* Footer */
 .footer{
@@ -163,10 +184,10 @@ main {
     height: 30px;
     display: flex;
     justify-content: center;
-    background-color: #d27245;
+    background-color: #ada7c9;
     align-items: center;
     font-weight: 500;
-    border: 2px solid black;
+    border-top: 2px solid black;
 }
 /* END FOOTER CSS */
 
@@ -176,21 +197,20 @@ main {
 
 /* MEDIUM / Tablet */
 @media only screen and (min-width: 768px) {
-/*
-    #menu li {
-        display: inline;
-        padding: 8px;
-    }
-    
-    #menu li a{
-        color: black;
-        text-decoration: none;
-    }
-    
-    #menu li.active {
-        text-decoration: underline;
-    }
-    */
+
+/* header, menu */
+
+#menu, #menu-bg{
+    display: none;
+}
+
+.nav li{
+    display: inline;
+    padding: 15px;
+}
+
+/* BIO */
+
 }
 
 /* LARGE / Desktop */

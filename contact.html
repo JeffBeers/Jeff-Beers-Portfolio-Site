@@ -30,55 +30,43 @@
             </ul>
         </div>
         <div class="menu-bg" id="menu-bg"> </div>
-            <!--<nav class="nav">
-                <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-             </nav>-->
+
    </header> 
 
    <main>
  
         <h2>Contact Me</h2>
             <form>
-                <div>
-                    <label for="fullName">Full Name</label>
+                <div class="inputGroup">
+                    <div><label for="fullName">Full Name</label></div> <!-- 'label' element with 'for' attribute puts cursor in the input box if clicked on. -->
+                    <div><input id="fullName" type="text"/> </div>
                 </div>
-                <div>
-                    <input id="fullName" type="text"/> 
+                
+                <div class="inputGroup">
+                    <div><label for="email">Email</label></div>
+                    <div><input id="email" type="email"/></div>
                 </div>
-                <div> 
-                    <label for="email">Email</label>
+
+                <div class="inputGroup">
+                    <div> <label for="subject">Subject</label></div>
+                    <div>
+                        <select id="subject">
+                            <option>Personal Message</option>
+                            <option>Lessons</option>
+                            <option>Band Inquiry</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <input id="email" type="email"/>
-                </div>
-                <div> 
-                    <label for="subject">Subject</label>
-                </div>
-                <div>
-                    <select id="subject">
-                        <option>Personal Message</option>
-                        <option>Lessons</option>
-                        <option>Band Inquiry</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div> 
-                    <label for="msg">Message</label>
-                </div>
-                <div>
-                    <textarea id="msg" rows="4"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Send Message" />
+
+                <div class="inputGroup">
+                    <div><label for="msg">Message</label></div>
+                    <div><textarea id="msg" rows="3"></textarea></div>
+                    <div><input type="submit" value="Send Message" id="submit"></div>
                 </div>
             </form>
 
-   </main>
+   </main> 
 
    <footer class="footer">
         &copy; 2022 Copyright - Jeff Beers
