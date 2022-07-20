@@ -215,6 +215,7 @@ main {
 
 #nav{
     display: block;
+    margin-top: 65px;
 }
 
 /* BIO */
@@ -224,7 +225,7 @@ main {
 /* LARGE / Desktop */
 @media only screen and (min-width: 1024px) {
 
-    #nav{
-        display: block;
+    .nav li{
+        padding-right: 65px;
     }
 }
