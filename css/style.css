@@ -15,7 +15,7 @@ body{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    background-color: #5e548e;
+    background: linear-gradient( to bottom right, #5e548e, #ada7c9 );
     font-size: 50px;
     align-items: center;
     border-bottom: 2px solid black;
@@ -82,7 +82,7 @@ body{
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: #64a6bd;
+    background: linear-gradient(to right, #64a6bd, #dbefff);
     border-radius: 50%;
     transition: 0.3s ease;
 }
@@ -142,7 +142,7 @@ main {
 .homeMain{
     display: flex;
     justify-content: center;
-    background-color: #E3ECF3;
+    background-color: #dbefff;
 }
 
 #homePic{
@@ -155,7 +155,7 @@ main {
 
 /* BIO */
 .bioMain{
-    background-color: #e3ecf3; 
+    background-color: #dbefff; 
     display: block;
 }
 
@@ -188,7 +188,7 @@ main {
     height: 30px;
     display: flex;
     justify-content: center;
-    background-color: #ada7c9;
+    background: linear-gradient( to top right, #5e548e, #ada7c9 );
     align-items: center;
     font-weight: 500;
     border-top: 2px solid black;
