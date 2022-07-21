@@ -147,7 +147,7 @@ main {
 
 #homePic{
     width: 65%; 
-    margin-bottom: 164px;  
+    margin-bottom: 164px; 
     border: 2px solid black;
 }
 /*END HOME PAGE */
@@ -159,7 +159,7 @@ main {
     display: block;
 }
 
-.bioPics {
+.bioPic1, .bioPic2 {
     width: 65%;
     border: 2px solid black;
     margin-top: 10px;
@@ -219,6 +219,51 @@ main {
 }
 
 /* BIO */
+
+.bioMain > h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.bioContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bioP1, .bioP2 .bioPic1, .bioPic2{
+    margin-top: 10px;
+}
+
+.bioP1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.bioPic1{
+    width: 95%;
+    margin-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.bioPic2{
+    width: 95%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bioP2{
+    margin-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 }
 
