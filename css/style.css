@@ -159,11 +159,15 @@ main {
     display: block;
 }
 
+.bioMain > h2{
+    margin-bottom: 20px;
+}
+
 .bioPic1, .bioPic2 {
     width: 65%;
     border: 2px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* END BIO PAGE /*
 
@@ -265,12 +269,19 @@ main {
     grid-row-end: 3;
 }
 
+.bioP3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 }
 
 /* LARGE / Desktop */
 @media only screen and (min-width: 1024px) {
 
-    .nav li{
-        padding-right: 65px;
-    }
+.nav li{
+    padding-right: 65px;
+}
+
+
 }
