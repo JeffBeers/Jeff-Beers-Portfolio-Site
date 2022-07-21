@@ -283,5 +283,50 @@ main {
     padding-right: 65px;
 }
 
+.bioP1, .bioP2 .bioPic1, .bioPic2{
+    margin-top: 0;
+}
+
+.bioContent{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.bioP1{
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.bioPic1{
+    width: 95%;
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+
+.bioPic2{
+    width: 95%;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bioP2{
+    margin-left: 20px;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bioP3{
+    margin-left: 20px;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 220px;
+}
 
 }
