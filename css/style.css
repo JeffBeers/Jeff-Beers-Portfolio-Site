@@ -181,9 +181,10 @@ main {
 .inputGroup input,
 .inputGroup textarea,
 .inputGroup select{
+    margin: 0 10px 0 10px;
     padding: 5px;
     border: 1px solid black;
-    width: 75%;
+    width: 90%;
 }
 
 /* Footer */
@@ -222,7 +223,7 @@ main {
     margin-top: 65px;
 }
 
-/* BIO */
+/* BIO MEDIUM */
 
 .bioMain > h2{
     display: flex;
@@ -274,6 +275,19 @@ main {
     grid-column-end: 3;
 }
 
+/* CONTACT MEDIUM */
+
+.contactMain > h2{
+    display: flex;
+    justify-content: center;
+}
+
+.contactMain{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
 }
 
 /* LARGE / Desktop */
@@ -282,6 +296,8 @@ main {
 .nav li{
     padding-right: 65px;
 }
+
+/* BIO LARGE */
 
 .bioP1, .bioP2 .bioPic1, .bioPic2{
     margin-top: 0;
@@ -327,6 +343,13 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;
     margin-top: 220px;
+}
+
+/* CONTACT LARGE */
+
+.contactMain{
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 }
