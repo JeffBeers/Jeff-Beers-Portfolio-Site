@@ -36,16 +36,20 @@
    <main class="galleryMain">
 
         <h2>Gallery</h2>
-            
+        
+        <div class="full-img" id="fullImgBox">
+            <img src="img/imgGall1.jpeg" id="fullImg" alt="Old Lou's Ragtime Band">
+            <span onclick="closeFullImg()">X</span>
+        </div>
         <div class="imgGallery">
-            <img src="img/imgGall1.jpeg" alt="Old Lou's Ragtime Band">
-            <img src="img/imgGall2.jpeg" alt="UofL student brass quintet">
-            <img src="img/imgGall3.jpeg" alt="William Feigns in Springfield, IL">
-            <img src="img/imgGall4.jpeg" alt="Brass Quartet after performing wedding ceremony music">
-            <img src="img/imgGall5.jpeg" alt="Usual Suspects Band">
-            <img src="img/imgGall6.jpeg" alt="Brass players for the Southern Illinois Symphony Orchestra">
-            <img src="img/imgGall7.jpeg" alt="Unaffiliated Brass Quintet">
-            <img src="img/imgGall8.jpeg" alt="Boom Pah Pah polka band">
+            <img src="img/imgGall1.jpeg" onclick="openFullImg(this.src)" alt="Old Lou's Ragtime Band">
+            <img src="img/imgGall2.jpeg" onclick="openFullImg(this.src)" alt="UofL student brass quintet">
+            <img src="img/imgGall3.jpeg" onclick="openFullImg(this.src)" alt="William Feigns in Springfield, IL">
+            <img src="img/imgGall4.jpeg" onclick="openFullImg(this.src)" alt="Brass Quartet after performing wedding ceremony music">
+            <img src="img/imgGall5.jpeg" onclick="openFullImg(this.src)" alt="Usual Suspects Band">
+            <img src="img/imgGall6.jpeg" onclick="openFullImg(this.src)" alt="Brass players for the Southern Illinois Symphony Orchestra">
+            <img src="img/imgGall7.jpeg" onclick="openFullImg(this.src)" alt="Unaffiliated Brass Quintet">
+            <img src="img/imgGall8.jpeg" onclick="openFullImg(this.src)" alt="Boom Pah Pah polka band">
         </div>
 
    </main>
